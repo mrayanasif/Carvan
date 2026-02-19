@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvan | Pre-Owned Cars</title>
+    <link rel="icon" href="/img/2-removebg-preview.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom Css -->
+ <link rel="stylesheet" href="style.css">
+ <!-- Custom styling -->
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        /* card-layout */
+.card {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card:hover {
+  background-color: black;
+  color: white; 
+}
+/* card title         */
+.card-title{
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+margin-top: 8%;
+}
+/*Toggler Button Color */
+.navbar-toggler {
+  transition:0.5s ease;
+}
+/* Hover Effect for Toggler Button */
+.navbar-toggler:hover {
+  transform: scale(1.1);   
+}
+.bi {
+    color: rgb(194, 184, 184) !important;
+}
+
+</style>
+</head>
+<body background="/img/web bg.jpg" style="background-repeat: no-repeat; background-size: cover;">
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="/img/2-removebg-preview.png" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"id="navbar">
+            <a class="nav-link" href="index.html"  id="text">Home</a>
+          </li>
+          <li class="nav-item" id="navbar">
+            <a class="nav-link" href="index.html#brands"  id="text">Brands</a>
+          </li>
+       
+          <li class="nav-item dropdown" id="navbar">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="text">
+              Range Of Cars
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" >
+              <li><a class="dropdown-item" href="range.html#small-car"  id="text">Small Cars</a></li>
+              <li><a class="dropdown-item" href="range.html#sedan"  id="text">Sedan</a></li>
+              <li><a class="dropdown-item" href="range.html#van" id="text">Vans</a></li>
+              <li><a class="dropdown-item" href="range.html#jeep" id="text">Jeep</a></li>
+            </ul>
+          </li>
+        
+          <li class="nav-item"  id="navbar">
+            <a class="nav-link" href="Pre-Owned.html" id="text">Pre-Owned Cars</a>
+          </li>
+        </li>
+        <li class="nav-item dropdown" id="navbar">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="text">
+           Discover
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" id="text">
+            <li><a class="dropdown-item" href="Aboutus.html#event"  id="navbar">Events</a></li>
+            <li><a class="dropdown-item" href="Aboutus.html"  id="navbar">About Us</a></li>
+            <li><a class="dropdown-item" href="gallery.html" id="navbar">Showroom</a></li>
+            <li><a class="dropdown-item" href="index.html#why-choose-us" id="navbar">Why Choose Us</a></li>
+            <li><a class="dropdown-item" href="index.html#fback" id="navbar">Customer Feedback</a></li>
+            <li><a class="dropdown-item" href="Carvan Safety.docx" id="navbar">Safety & Security</a></li>
+            <li><a class="dropdown-item" href="contact.html" id="navbar">Book A Test Drive</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item" id="navbar">
+          <a class="nav-link" href="contact.html" id="text">Contact Us</a>
+        </li>
+    </ul>
+      </div>
+    </div>
+    </nav>
+
+
+<div class="container py-2">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/jeep wrangler.jpg" class="card-img-top img-fluid"  style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Jeep Wrangler</h5>
+                    <ul class="list-unstyled">
+                        <li>Type: Chrysler</li>
+                        <li>Model: 2017</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: SUV</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/toyota highase 2010.jpg" class="card-img-top img-fluid" style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Highace</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Toyota</li>
+                        <li>Model: 2010</li>
+                        <li>Condition: Good</li>
+                        <li>Type: Van</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/honda accord 2010.jpg" class="card-img-top img-fluid"  style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Honda Accord</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Honda</li>
+                        <li>Model: 2021</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Midsize Family Car</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/Suzuki-Alto-VXL-2024.jpg" class="card-img-top img-fluid"  style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Suzuki Alto</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Suzuki</li>
+                        <li>Make & Model: 2024</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Compact Family Car</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/evoque 2021.avif" class="card-img-top img-fluid"  style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Range Rover Evoque</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Range Rover</li>
+                        <li>Model: 2021</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Luxury SUV</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/Altis.webp" class="card-img-top img-fluid" style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Altis 1.6</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Toyota</li>
+                        <li>Model: 2021</li>
+                        <li>Condition: Good</li>
+                        <li>Type: Family Car</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/aqua 2020.jpg" class="card-img-top img-fluid" style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Aqua</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Toyota</li>
+                        <li>Model: 2021</li>
+                        <li>Condition: Good</li>
+                        <li>Type: HEV</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/Swift 2023.webp" class="card-img-top img-fluid" style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Suzuki Swift</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Suzuki</li>
+                        <li>Model: 2023</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Family Car</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/hyundai i20 2015.avif" class="card-img-top img-fluid" style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Hyundai i20</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Hyundai</li>
+                        <li>Make & Model: 2015</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Hatchback</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/2020-kia-niro-ex-premium-278-1606858705.avif" class="card-img-top img-fluid"  style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Kia Niro</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Kia</li>
+                        <li>Model: 2020</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Compact SUV</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/2018-chrysler-pacifica-gallery-exterior-11.jpg.image_.1440-768x390.avif" class="card-img-top img-fluid"  style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Chrysler Pacifica</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Chrysler</li>
+                        <li>Model: 2018</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Minivan</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/picanto 2024.jpg" class="card-img-top img-fluid" style="height: 230px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Kia Picanto</h5>
+                    <ul class="list-unstyled">
+                        <li>Brand: Kia</li>
+                        <li>Model: 2024</li>
+                        <li>Condition: Excellent</li>
+                        <li>Type: Small Car</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="contact.html"><button class="btn btn-success">Contact for More Info</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<!-- chat-button -->
+<div id="chat-button">
+  <a href="whatsapp://send?text=http://www.example.com"> <button id="btn-chat"><i class="bi bi-chat-dots"
+        style="font-size: 20px;"></i> Chat with Us</button></a>
+</div>
+    <!-- footer -->
+    <footer class="text-center text-lg-start text-muted bg-dark">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block" style="color:rgb(194, 184, 184)">
+          <p>Get connected with us on social networks:</p>
+        </div>
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://mail.google.com/mail/u/1/#inbox" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
+            <i class="bi bi-envelope"></i>
+          </a>
+          <a href="https://www.instagram.com/accounts/login/?hl=en" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+      </section>
+      <!-- Logo Info  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-4 mb-4">
+              <!-- Content -->
+              <img src="/img/2-removebg-preview.png" class="mb-3" style="max-width: 150px;">
+              <p class="mb-2 fs-12" style="color:rgb(194, 184, 184)">Carvan is customers first approach, since 25 years providing expert guidance, transparent pricing, and seamless trade-in options to make your car-buying experience smooth and hassle-free.</p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: red;">Quick Links </h6>
+              <p>
+                <a href="project.html" class="text-decoration-none text-uppercase"
+                  style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Home</a>
+              </p>
+              <p>
+                <a href="project.html#brand-section" class="text-decoration-none text-uppercase"
+                  style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Brands</a>
+              </p>
+              <p>
+                <a href="range.html" class="text-decoration-none text-uppercase"
+                  style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Range
+                  Of Cars</a>
+              </p>
+              <p>
+                <a href="Pre-Owned.html" class="text-decoration-none text-uppercase"
+                  style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Pre-Owned</a>
+              </p>
+              <p>
+                <a href="contact.html" class="text-decoration-none text-uppercase"
+                  style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 11px;">Help</a>
+              </p>
+              <p>
+                <a href="Safety & Security Policies.pdf" class="text-decoration-none text-uppercase" download
+                  style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 11px;">Safety
+                  & Security Policies</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: red;">Contact</h6>
+              <p style="color:rgb(194, 184, 184)"><i class="bi bi-geo-alt me-3"></i>Faisal Cantonment,Shop
+                w-65,Karachi,Pakistan</p>
+              <p style="color:rgb(194, 184, 184)">
+                <i class="bi bi-envelope me-3"></i>
+                carvansupport@gmail.com
+              </p>
+              <p style="color:rgb(194, 184, 184)"><i class="bi bi-phone me-3"></i> + 92 234 567 99</p>
+              <p style="color:rgb(194, 184, 184)"><i class="bi bi-telephone me-3"></i> 021 234 56 489</p>
+            </div>
+    
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"> Carvan All rights reserved. | Privacy Policy</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

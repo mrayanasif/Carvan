@@ -1,0 +1,94 @@
+/* navbar */
+.navbar-nav {
+    margin-left: auto;
+    font-weight: bolder;
+   align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* Hover Effect for Toggler Button */
+  .navbar-toggler:hover {
+    transform: scale(1.1);   
+  }
+  #navbar :hover {
+    color: rgb(255, 8, 8);
+  }
+  #navbar {
+    position:relative;
+    display: flex;
+    
+  }
+  
+  #navbar :after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(111, 2, 2);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in;
+  }
+  #navbar :hover::after {
+    transform: scale(1);
+    transform-origin: bottom left; 
+  }
+  #text{
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 17px;
+  }
+  /* /logo */
+#logo{
+  height: 70px;
+  width: 100;
+}
+/* Form head */
+#heading{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times serif;
+  color: rgb(8, 154, 28);
+  cursor: pointer;
+  }
+  #text-p{
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times serif;
+    color: rgb(14, 125, 25);
+    cursor: pointer;
+    }
+  
+.hover-effect:hover {
+    transform: translateY(-8px);
+    transition: all 0.3s ease;   
+    }
+/* Hover Effect for Toggler Button */
+.navbar-toggler:hover {
+  transform: scale(1.1);  
+  transition: 0.6s ease; 
+}
+/* /chat button/ */
+#chat-button {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+}
+#btn-chat {
+  background-color: #000000;
+  color: white;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:0.3s;
+}
+#btn-chat:hover {
+  background-color: #c00b0b;
+  color: #ffffff;
+  transform:scale(1.1);
+  transition: 0.6s;
+}

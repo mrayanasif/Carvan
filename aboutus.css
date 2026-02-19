@@ -1,0 +1,80 @@
+
+/* aboutus */
+#about-head{
+color: rgb(255, 251, 251);
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 40px;
+text-align: center;
+font-weight: bolder;
+text-transform: uppercase;
+}
+#about-head:hover{
+    color: rgb(20, 110, 146);
+    transition: 1.5s;
+    cursor: pointer;
+}
+.about-text{
+    font-family: cursive;
+    text-align: justify;
+    font-size: large;
+    color: white;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+/* Events */
+.card-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-title:hover{
+    color: rgb(20, 110, 146);
+    transition: 1.5s;
+    cursor: pointer;
+}
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: larger;
+}
+/* mission styling */
+.mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .mission-container :hover {
+    transition: 0.6s ease;
+    transform: scale(1.1);
+  }
+
+  .mission-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;   
+    padding: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+
+  .mission-title {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .mission-text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
