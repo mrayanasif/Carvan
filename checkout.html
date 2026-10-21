@@ -1,299 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carvan | Booking Form</title>
-    <link rel="icon" href="/img/2-removebg-preview.png">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add icon library -->
- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
- <link rel="stylesheet" href="style.css">
-    <style>
-#booking-heading{
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    color: rgb(109, 188, 220);
-}
-#booking-heading:hover{
-    color: rgb(36, 81, 64);
-    transition: 1.5s;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-.form-label{
-    color: rgb(0, 0, 0);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
-.form-container {
-    width: 100%;
-    margin: 20px auto;
-     padding: 20px;
-    background: #b6b1b1c3;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carvan | Booking Form</title>
+  <link rel="icon" href="img/2-removebg-preview.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #booking-heading {
+      font-size: 40px;
+      font-weight: bolder;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+      color: rgb(109, 188, 220);
     }
-.form-check-label{
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bolder;   
-}
-.invalid-feedback{
-    color: rgb(221, 255, 0);
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(255, 230, 0);
-    font-weight: bolder;
-}
-.request-button{
-    background-color: rgb(251, 255, 249);
-    color: rgb(37, 5, 5);
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer; 
-}
-.request-button:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(18, 72, 7);
-    transition: 0.6s ease-in-out;
-   transform: matrix(1.1, 0, 0, 1.1, 0, 0);
-}
-/* Hover Effect for Toggler Button */
-.navbar-toggler:hover {
-  transform: scale(1.1);  
-  transition: 0.6s ease-in-out; 
-}
-.bi {
-    color: rgb(194, 184, 184) !important;
-}
 
+    #booking-heading:hover {
+      color: rgb(36, 81, 64);
+      transition: 1.5s;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
 
-    </style>
+    .form-label {
+      color: rgb(0, 0, 0);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 18px;
+    }
+
+    .form-container {
+      width: 100%;
+      margin: 20px auto;
+      padding: 20px;
+      background: #b6b1b1c3;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-check-label {
+      font-size: 18px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bolder;
+    }
+
+    .invalid-feedback {
+      color: rgb(221, 255, 0);
+      font-size: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rgb(255, 230, 0);
+      font-weight: bolder;
+    }
+
+    .request-button {
+      background-color: rgb(251, 255, 249);
+      color: rgb(37, 5, 5);
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .request-button:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(18, 72, 7);
+      transition: 0.6s ease-in-out;
+      transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+    }
+
+    /* Hover Effect for Toggler Button */
+    .navbar-toggler:hover {
+      transform: scale(1.1);
+      transition: 0.6s ease-in-out;
+    }
+
+    .bi {
+      color: rgb(194, 184, 184) !important;
+    }
+  </style>
 </head>
-<body background="/img/web bg.jpg" style="background-repeat: no-repeat; background-size: cover;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="/img/2-removebg-preview.png" id="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item"id="navbar">
-                <a class="nav-link" href="index.html"  id="text">Home</a>
-              </li>
-              <li class="nav-item" id="navbar">
-                <a class="nav-link" href="index.html#brands"  id="text">Brands</a>
-              </li>
-             
-              <li class="nav-item dropdown" id="navbar">
-                <a class="nav-link dropdown-toggle" href="range.html" data-bs-toggle="dropdown" id="text">
-                  Range Of Cars
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" id="text">
-                  <li><a class="dropdown-item" href="range.html#small-car"  id="navbar">Small Cars</a></li>
-                  <li><a class="dropdown-item" href="range.html#sedan"  id="navbar">Sedan</a></li>
-                  <li><a class="dropdown-item" href="range.html#van" id="navbar">Vans</a></li>
-                  <li><a class="dropdown-item" href="range.html#jeep" id="navbar">Jeep</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"  id="navbar">
-                <a class="nav-link" href="Pre-Owned.html" id="text">Pre-Owned Cars</a>
-              </li>
-            <li class="nav-item dropdown" id="navbar">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="text">
-                 Discover
-                </a>>
-              <ul class="dropdown-menu dropdown-menu-dark" id="text">
-                <li><a class="dropdown-item" href="Aboutus.html#event"  id="navbar">Events</a></li>
-                <li><a class="dropdown-item" href="Aboutus.html"  id="navbar">About Us</a></li>
-                <li><a class="dropdown-item" href="gallery.html" id="navbar">Showroom</a></li>
-                <li><a class="dropdown-item" href="index.html#why-choose-us" id="navbar">Why Choose Us</a></li>
-                <li><a class="dropdown-item" href="index.html#fback" id="navbar">Customer Feedback</a></li>
-                <li><a class="dropdown-item" href="Carvan Safety.docx" id="navbar">Safety & Security</a></li>
-                <li><a class="dropdown-item" href="contact.html" id="navbar">Book A Test Drive</a></li>
-                
-              </ul>
-            </li>
-            <li class="nav-item" id="navbar">
-              <a class="nav-link" href="contact.html" id="text">Contact Us</a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      </nav>
-<div class="container">
-    <div class="form-container">
-        <h4 class="text-center mb-4" id="booking-heading">REQUEST A BOOKING</h4>
 
-        <form id="thankmodel" class="needs-validation" novalidate>
-            
-            <!-- Model Selection -->
-<div class="mb-3">
-    <label for="model" class="form-label">Choose Your Model:</label>
-        <select class="form-select" id="model" required>
-        <option value="" selected disabled>Select Your Model</option>
-        <!-- toyota -->
-        <option>Toyota Corolla Hybrid (Model: 2018)</option>
-        <option>Toyota BZ4X (Model: 2023)</option>
-        <option>Toyota Camry (Model: 2025)</option>
-        <option>Toyota Supra GT (Model: 2023)</option>
-        <option>Toyota Harrier G-Sports (Model: 2023)</option>
-        <option>Toyota Mirai (Model: 2023)</option>
-        <option>Toyota Hilux (Model: 2024)</option>
-        <option>Toyota Landcruiser (Model: 2024)</option>
-    <!-- benz -->
-        <option>Mercedes Benz EQS (Model: 2023)</option>
-        <option>Mercedes S Class (Model: 2024)</option>
-        <option>Mercedes Benz EQA (Model: 2023)</option>
-        <option>Mercedes EQB 300 (Model: 2023)</option>
-        <option>Mercedes EQE Sedan (Model: 2023)</option>
-        <option>Mercedes Benz GLS (Model: 2024)</option>
-        <option>Mercedes Benz GLE SUV (Model: 2024)</option>
-        <option>Mercedes Roadster (Model: 2024)</option>
-    <!-- kia -->
-        <option>Kia Fort GT Sedan (Model: 2023)</option>
-        <option>Kia Carnival (Model: 2024)</option>
-        <option>Kia Sorento (Model: 2024)</option>
-        <option>Kia Niro (Model: 2025)</option>
-        <option>Kia K5 (Model: 2024)</option>
-        <option>Kia EV3 (Model: 2024)</option>
-        <option>Kia Stonic (Model: 2024)</option>
-        <option>Kia Sportage (Model: 2020)</option>
-    <!-- honda -->
-        <option>Honda Accord (Model: 2024)</option>
-        <option>Honda BR-V (Model: 2023)</option>
-        <option>Honda Ridgeline (Model: 2024)</option>
-        <option>Honda HR-V (Model: 2024)</option>
-        <option>Honda Civic (Model: 2025)</option>
-        <option>Honda SUV (Model: 2024)</option>
-        <option>Honda City (Model: 2024)</option>
-        <option>Honda CR-V (Model: 2018)</option>
-    <!-- bmw -->
-        <option>BMW Series 3 (Model: 2025)</option>
-        <option>BMW Series 5 (Model: 2025)</option>
-        <option>BMW M8 (Model: 2025)</option>
-        <option>BMW IX (Model: 2025)</option>
-        <option>BMW Z4 (Model: 2025)</option>
-        <option>BMW Series 7 (Model: 2024)</option>
-        <option>BMW M4 (Model: 2018)</option>
-        <option>BMW X5 (Model: 2024)</option>
-    <!-- nissan -->
-        <option>Nissan Frontier (Model: 2025)</option>
-        <option>Nissan Altima (Model: 2025)</option>
-        <option>Nissan Rogue (Model: 2025)</option>
-        <option>Nissan Leaf (Model: 2024)</option>
-        <option>Nissan Juke (Model: 2018)</option>
-        <option>Nissan Versa (Model: 2025)</option>
-        <option>Nissan Titan (Model: 2025)</option>
-        <option>Nissan Murano (Model: 2025)</option>
-        </select>
-    <div class="invalid-feedback">Please select a car model.</div>
-</div>
+<body background="img/web bg.jpg" style="background-repeat: no-repeat; background-size: cover;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/2-removebg-preview.png" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item" id="navbar">
+            <a class="nav-link" href="index.html" id="text">Home</a>
+          </li>
+          <li class="nav-item" id="navbar">
+            <a class="nav-link" href="index.html#brands" id="text">Brands</a>
+          </li>
 
-<!-- City Selection -->
-    <div class="mb-3">
-        <label for="city" class="form-label">Choose Your City:</label>
-            <select class="form-select" id="city" required>
-                    <option value="" selected disabled>Select Your City</option>
-                    <option>Karachi</option>
-                    <option>Islamabad</option>
-                    <option>Lahore</option>
-                    <option>Peshawar</option>
-                    <option>Quetta</option>
-                    <option>Faisalabad</option>
-                    <option>Multan</option>
-                    <option>Sialkot</option>
-                    <option>Gujranwala</option>
-                    <option>Hyderabad</option>
-                   
-                </select>
-        <div class="invalid-feedback">Please select your city.</div>
-</div>
-<!-- PERSONAL INFORMATION -->
-            <!-- Name -->
-            <div class="mb-3">
-                <label for="first_name" class="form-label">First Name:</label>
-                <input type="text" class="form-control" id="first_name" placeholder="Enter Your First Name" required>
-                <div class="invalid-feedback">Please enter your first name.</div>
-            </div>
+          <li class="nav-item dropdown" id="navbar">
+            <a class="nav-link dropdown-toggle" href="range.html" data-bs-toggle="dropdown" id="text">
+              Range Of Cars
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" id="text">
+              <li><a class="dropdown-item" href="range.html#small-car" id="navbar">Small Cars</a></li>
+              <li><a class="dropdown-item" href="range.html#sedan" id="navbar">Sedan</a></li>
+              <li><a class="dropdown-item" href="range.html#van" id="navbar">Vans</a></li>
+              <li><a class="dropdown-item" href="range.html#jeep" id="navbar">Jeep</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" id="navbar">
+            <a class="nav-link" href="Pre-Owned.html" id="text">Pre-Owned Cars</a>
+          </li>
+          <li class="nav-item dropdown" id="navbar">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="text">
+              Discover
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" id="text">
+              <li><a class="dropdown-item" href="Aboutus.html#event" id="navbar">Events</a></li>
+              <li><a class="dropdown-item" href="Aboutus.html" id="navbar">About Us</a></li>
+              <li><a class="dropdown-item" href="gallery.html" id="navbar">Showroom</a></li>
+              <li><a class="dropdown-item" href="index.html#why-choose-us" id="navbar">Why Choose Us</a></li>
+              <li><a class="dropdown-item" href="index.html#fback" id="navbar">Customer Feedback</a></li>
+              <li><a class="dropdown-item" href="Carvan Safety.docx" id="navbar">Safety & Security</a></li>
+              <li><a class="dropdown-item" href="contact.html" id="navbar">Book A Test Drive</a></li>
 
-            <div class="mb-3">
-                <label for="last_name" class="form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last_name" placeholder="Enter Your Last Name" required>
-                <div class="invalid-feedback">Please enter your last name.</div>
-            </div>
-
-            <!-- Email -->
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
-                <div class="invalid-feedback">Please enter a valid email.</div>
-            </div>
-
-            <!-- Contact Number -->
-            <div class="mb-3">
-                <label for="contact" class="form-label">Contact Number:</label>
-                <input type="tel" class="form-control" id="contact" placeholder="Enter Your Phone Number" required>
-                <div class="invalid-feedback">Please enter your contact number.</div>
-            </div>
-
-            <!-- Message -->
-            <div class="mb-3">
-                <label for="message" class="form-label">Your Message:</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here" required></textarea>
-                <div class="invalid-feedback">Please enter your message.</div>
-            </div>
-
-            <!-- Keep in Touch -->
-            <div class="mb-3">
-                <label class="form-label">Keep In Touch:</label>
-                <div class="d-flex justify-content-between">
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="contact_preference" value="email" required>
-                        <label class="form-check-label">Email</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="contact_preference" value="phone" required>
-                        <label class="form-check-label">Phone</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="contact_preference" value="text" required>
-                        <label class="form-check-label">Text</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="contact_preference" value="none" required>
-                        <label class="form-check-label">None</label>
-                    </div>
-                </div>
-                <div class="invalid-feedback">Please select a contact preference.</div>
-            </div>
-
-            <!-- Terms and Conditions -->
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="terms" required>
-                <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
-                <div class="invalid-feedback">You must agree before submitting.</div>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="text-center">
-                <button type="submit" class="request-button">Send Request</button>
-            </div>
-
-        </form>
+            </ul>
+          </li>
+          <li class="nav-item" id="navbar">
+            <a class="nav-link" href="contact.html" id="text">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-<!-- thank you for submitting -->
-<div class="modal" id="thankyoumodal" tabindex="-1" aria-labelledby="thankyoumodalLabel" aria-hidden="true">
+  </nav>
+  <div class="container">
+    <div class="form-container">
+      <h4 class="text-center mb-4" id="booking-heading">REQUEST A BOOKING</h4>
+
+      <form id="thankmodel" class="needs-validation" novalidate>
+
+        <!-- Model Selection -->
+        <div class="mb-3">
+          <label for="model" class="form-label">Choose Your Model:</label>
+          <select class="form-select" id="model" required>
+            <option value="" selected disabled>Select Your Model</option>
+            <!-- toyota -->
+            <option>Toyota Corolla Hybrid (Model: 2018)</option>
+            <option>Toyota BZ4X (Model: 2023)</option>
+            <option>Toyota Camry (Model: 2025)</option>
+            <option>Toyota Supra GT (Model: 2023)</option>
+            <option>Toyota Harrier G-Sports (Model: 2023)</option>
+            <option>Toyota Mirai (Model: 2023)</option>
+            <option>Toyota Hilux (Model: 2024)</option>
+            <option>Toyota Landcruiser (Model: 2024)</option>
+            <!-- benz -->
+            <option>Mercedes Benz EQS (Model: 2023)</option>
+            <option>Mercedes S Class (Model: 2024)</option>
+            <option>Mercedes Benz EQA (Model: 2023)</option>
+            <option>Mercedes EQB 300 (Model: 2023)</option>
+            <option>Mercedes EQE Sedan (Model: 2023)</option>
+            <option>Mercedes Benz GLS (Model: 2024)</option>
+            <option>Mercedes Benz GLE SUV (Model: 2024)</option>
+            <option>Mercedes Roadster (Model: 2024)</option>
+            <!-- kia -->
+            <option>Kia Fort GT Sedan (Model: 2023)</option>
+            <option>Kia Carnival (Model: 2024)</option>
+            <option>Kia Sorento (Model: 2024)</option>
+            <option>Kia Niro (Model: 2025)</option>
+            <option>Kia K5 (Model: 2024)</option>
+            <option>Kia EV3 (Model: 2024)</option>
+            <option>Kia Stonic (Model: 2024)</option>
+            <option>Kia Sportage (Model: 2020)</option>
+            <!-- honda -->
+            <option>Honda Accord (Model: 2024)</option>
+            <option>Honda BR-V (Model: 2023)</option>
+            <option>Honda Ridgeline (Model: 2024)</option>
+            <option>Honda HR-V (Model: 2024)</option>
+            <option>Honda Civic (Model: 2025)</option>
+            <option>Honda SUV (Model: 2024)</option>
+            <option>Honda City (Model: 2024)</option>
+            <option>Honda CR-V (Model: 2018)</option>
+            <!-- bmw -->
+            <option>BMW Series 3 (Model: 2025)</option>
+            <option>BMW Series 5 (Model: 2025)</option>
+            <option>BMW M8 (Model: 2025)</option>
+            <option>BMW IX (Model: 2025)</option>
+            <option>BMW Z4 (Model: 2025)</option>
+            <option>BMW Series 7 (Model: 2024)</option>
+            <option>BMW M4 (Model: 2018)</option>
+            <option>BMW X5 (Model: 2024)</option>
+            <!-- nissan -->
+            <option>Nissan Frontier (Model: 2025)</option>
+            <option>Nissan Altima (Model: 2025)</option>
+            <option>Nissan Rogue (Model: 2025)</option>
+            <option>Nissan Leaf (Model: 2024)</option>
+            <option>Nissan Juke (Model: 2018)</option>
+            <option>Nissan Versa (Model: 2025)</option>
+            <option>Nissan Titan (Model: 2025)</option>
+            <option>Nissan Murano (Model: 2025)</option>
+          </select>
+          <div class="invalid-feedback">Please select a car model.</div>
+        </div>
+
+        <!-- City Selection -->
+        <div class="mb-3">
+          <label for="city" class="form-label">Choose Your City:</label>
+          <select class="form-select" id="city" required>
+            <option value="" selected disabled>Select Your City</option>
+            <option>Karachi</option>
+            <option>Islamabad</option>
+            <option>Lahore</option>
+            <option>Peshawar</option>
+            <option>Quetta</option>
+            <option>Faisalabad</option>
+            <option>Multan</option>
+            <option>Sialkot</option>
+            <option>Gujranwala</option>
+            <option>Hyderabad</option>
+
+          </select>
+          <div class="invalid-feedback">Please select your city.</div>
+        </div>
+        <!-- PERSONAL INFORMATION -->
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="first_name" class="form-label">First Name:</label>
+          <input type="text" class="form-control" id="first_name" placeholder="Enter Your First Name" required>
+          <div class="invalid-feedback">Please enter your first name.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="last_name" class="form-label">Last Name:</label>
+          <input type="text" class="form-control" id="last_name" placeholder="Enter Your Last Name" required>
+          <div class="invalid-feedback">Please enter your last name.</div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+
+        <!-- Contact Number -->
+        <div class="mb-3">
+          <label for="contact" class="form-label">Contact Number:</label>
+          <input type="tel" class="form-control" id="contact" placeholder="Enter Your Phone Number" required>
+          <div class="invalid-feedback">Please enter your contact number.</div>
+        </div>
+
+        <!-- Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message:</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here"
+            required></textarea>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+
+        <!-- Keep in Touch -->
+        <div class="mb-3">
+          <label class="form-label">Keep In Touch:</label>
+          <div class="d-flex justify-content-between">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="contact_preference" value="email" required>
+              <label class="form-check-label">Email</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="contact_preference" value="phone" required>
+              <label class="form-check-label">Phone</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="contact_preference" value="text" required>
+              <label class="form-check-label">Text</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="contact_preference" value="none" required>
+              <label class="form-check-label">None</label>
+            </div>
+          </div>
+          <div class="invalid-feedback">Please select a contact preference.</div>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms" required>
+          <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="request-button">Send Request</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <!-- thank you for submitting -->
+  <div class="modal" id="thankyoumodal" tabindex="-1" aria-labelledby="thankyoumodalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-0">
@@ -301,7 +317,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body mb-0">
-          <p>Thank you for contacting us. We have received your message and will respond within 24-48 business hours.</p>
+          <p>Thank you for contacting us. We have received your message and will respond within 24-48 business hours.
+          </p>
         </div>
         <div class="modal-footer border-0">
           <button type="button" class="btn btn-success px-4 rounded-pill" data-bs-dismiss="modal">Close</button>
@@ -309,31 +326,31 @@
       </div>
     </div>
   </div>
-    <!-- // Bootstrap form validation -->
-    <script>
-        // Form validation
-        // (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    } 
-                    else {
-                        event.preventDefault()
-                        const thankyouModal = new bootstrap.Modal(document.getElementById('thankyoumodal'))
-                        thankyouModal.show()
-                        form.reset()
-                        form.classList.remove('was-validated')
-                    }
-                    form.classList.add('was-validated')
-                },false)
-            })
-        // })()
-    </script>   
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Chat Button>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <!-- // Bootstrap form validation -->
+  <script>
+    // Form validation
+    // (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        else {
+          event.preventDefault()
+          const thankyouModal = new bootstrap.Modal(document.getElementById('thankyoumodal'))
+          thankyouModal.show()
+          form.reset()
+          form.classList.remove('was-validated')
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+    // })()
+  </script>
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Chat Button>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
   <div id="chat-button">
     <a href="whatsapp://send?text=http://www.example.com"> <button id="btn-chat"><i class="bi bi-chat-dots"
           style="font-size: 20px;"></i> Chat with Us</button></a>
@@ -359,7 +376,8 @@
         <a href="https://mail.google.com/mail/u/1/#inbox" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
           <i class="bi bi-envelope"></i>
         </a>
-        <a href="https://www.instagram.com/accounts/login/?hl=en" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
+        <a href="https://www.instagram.com/accounts/login/?hl=en" class="me-4 text-reset"
+          style="color:rgb(194, 184, 184)">
           <i class="bi bi-instagram"></i>
         </a>
         <a href="https://www.tiktok.com/" class="me-4 text-reset" style="color:rgb(194, 184, 184)">
@@ -375,19 +393,21 @@
           <!-- Grid column -->
           <div class="col-md-4 mb-4">
             <!-- Content -->
-            <img src="/img/2-removebg-preview.png" class="mb-3" style="max-width: 150px;">
-            <p class="mb-2 fs-12" style="color:rgb(194, 184, 184)">Carvan is customers first approach, since 25 years providing expert guidance, transparent pricing, and seamless trade-in options to make your car-buying experience smooth and hassle-free.</p>
+            <img src="img/2-removebg-preview.png" class="mb-3" style="max-width: 150px;">
+            <p class="mb-2 fs-12" style="color:rgb(194, 184, 184)">Carvan is customers first approach, since 25 years
+              providing expert guidance, transparent pricing, and seamless trade-in options to make your car-buying
+              experience smooth and hassle-free.</p>
           </div>
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4" style="color: red;">Quick Links </h6>
             <p>
-              <a href="project.html" class="text-decoration-none text-uppercase"
+              <a href="index.html" class="text-decoration-none text-uppercase"
                 style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Home</a>
             </p>
             <p>
-              <a href="project.html#brand-section" class="text-decoration-none text-uppercase"
+              <a href="index.html#brands" class="text-decoration-none text-uppercase"
                 style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Brands</a>
             </p>
             <p>
@@ -422,15 +442,13 @@
             <p style="color:rgb(194, 184, 184)"><i class="bi bi-phone me-3"></i> + 92 234 567 99</p>
             <p style="color:rgb(194, 184, 184)"><i class="bi bi-telephone me-3"></i> 021 234 56 489</p>
           </div>
-  
+
         </div>
         <!-- Grid row -->
       </div>
     </section>
     <!-- Section: Links  -->
-  
-    </div>
-  
+
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2025 Copyright:
@@ -441,4 +459,5 @@
 
 
 </body>
+
 </html>

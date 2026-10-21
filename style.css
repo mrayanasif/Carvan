@@ -1,296 +1,335 @@
-/* /logo */
-#logo{
-    height: 70px;
-    width: 100;
-}
-/* navbar */
-.navbar-nav {
-  margin-left: auto;
-  font-weight: bolder;
- align-items: center;
-  display: flex;
-  justify-content: flex-end;
-}
-/* Hover Effect for Toggler Button */
-.navbar-toggler:hover {
-  transform: scale(1.1);  
-  transition:0.5s ease; 
-}
-#navbar :hover {
-  color: rgb(255, 8, 8);
-}
-#navbar {
-  position:relative;
-  display: flex;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
 }
 
-#navbar :after {
+body {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  color: #f1f1f1;
+}
+
+/* Global Section Scroll Offsets for Fixed Navbar */
+section[id], .cars-container, div[id] {
+  scroll-margin-top: 95px;
+}
+
+/* logo */
+#logo {
+  height: 65px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+#logo:hover {
+  transform: scale(1.05);
+}
+
+/* navbar */
+.navbar {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+.navbar-nav {
+  margin-left: auto;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* Hover Effect for Toggler Button */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+.navbar-toggler:hover {
+  transform: scale(1.05);  
+}
+
+#navbar {
+  position: relative;
+  display: flex;
+}
+#navbar :hover {
+  color: #ff3333 !important;
+}
+#navbar::after {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 6px;
+  height: 3px;
   bottom: 0;
   left: 0;
-  background-color: rgb(111, 2, 2);
+  background-color: #e60000;
   transform-origin: bottom right;
-  transition: transform 0.5s ease-in;
+  transition: transform 0.3s ease-in-out;
 }
-#navbar :hover::after {
-  transform: scale(1);
-  transform-origin: left; 
+#navbar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left; 
 }
-#text{
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+#text {
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  padding: 8px 12px;
 }
-/* /brands logo */
-#featured-brand{
-  height: 100px;
-object-fit: contain;
-}
-/* brand-section */
-#menu {
-    display: flex; 
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content:space-evenly; 
-    background-color: #000000;
-  }   
+
 /* company-name */
-#company{
-    color: rgb(235, 230, 230);
-    font-weight: bolder;
-    text-align:  justify;
-    font-size: 17px;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#company {
+  color: #e0e0e0;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #e60000;
 }
-#company:hover{
-  color: #f80000;
-  cursor: pointer;
-  transition: 0.6s ease-in-out;
-  
+#company:hover {
+  color: #ffffff;
+  border-left-color: #ff3333;
+  transition: 0.3s ease-in-out;
 }
-.car-name{
+
+.car-name {
   text-align: center;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 700;
   color: #ffffff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Outfit', sans-serif;
+  margin-top: 10px;
 }
-.car-name:hover{
-  color: #2884a8;
+.car-name:hover {
+  color: #38b6ff;
   cursor: pointer;
-  transition: 0.6s ease-in-out;
-  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
+
 /* features heading */
-.features{
-    text-align:center;
-    font-size: large;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
-
+.features {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 /* features of car */
-.list{
-    list-style: none;
-    font-size: medium;
-    font-weight: lighter;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    color: #ffffff;
-    font-family: cursive;
+.list {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: #dddddd;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
 }
-.checked{
-  color: rgb(245, 168, 52);
+.checked {
+  color: #ffb703;
 }
-/* book  now */
-.btn{
-  margin-left: auto;
-  margin-right: auto;  
-}
-.btn:hover{
-  background-color: #074428;
-  color: white;
-  transition: 0.6s;
-}
-/* Div id  */
-.cars-container {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;    
-    gap: 20px;
-  }
-  .cars-container:target {
-    display: flex;
-  }
 
-/* /chat button/ */
+/* book now */
+.btn-danger {
+  background: linear-gradient(135deg, #e60000 0%, #990000 100%);
+  border: none;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(230, 0, 0, 0.3);
+}
+.btn-danger:hover {
+  background: linear-gradient(135deg, #ff1a1a 0%, #cc0000 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(230, 0, 0, 0.5);
+}
+
+/* Div id */
+.cars-container {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;    
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.cars-container:target {
+  display: flex;
+}
+
+/* chat button */
 #chat-button {
   position: fixed;
-  bottom: 10px;
-  right: 50px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1050;
 }
 #btn-chat {
-  background-color: #000000;
-  color: white;
+  background: linear-gradient(135deg, #111111 0%, #252525 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  padding: 15px 20px;
-  font-size: 16px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition:0.3s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 #btn-chat:hover {
-  background-color: #c00b0b;
+  background: linear-gradient(135deg, #e60000 0%, #990000 100%);
   color: #ffffff;
-  transform:scale(1.1);
-  transition: 0.6s;
-}
-/* video slider */
-@media (max-width: 1024px) {
-  .d-block {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
-  }
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(230, 0, 0, 0.5);
 }
 
-/* view-more button  */
-.view-more{  
- margin-left: 50%;
- margin-right: 50%;
- white-space: nowrap;   
- font-family: cursive;
+/* view-more button */
+.view-more {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 25px auto 15px auto;
+  text-decoration: none;
 }
-.btn-v{
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn-v {
+  padding: 12px 36px;
   text-align: center;
-  background-color: #ea0000;
-  color: rgb(246, 236, 236);
-  font-weight: bolder;
-  font-size: medium;
+  background: linear-gradient(135deg, #e60000 0%, #990000 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
   border-radius: 50px;
-}
-.btn-v:hover{
-  background-color: white;
-  color: rgb(239, 11, 11);
-  transform: scale(1.1);
-  transition: 0.6s;
-}
-/* why choose us  */
-#choose-title{
-  font-size: 40px;
-  font-weight: bolder;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style:oblique;
-  color: rgb(66, 161, 199);
-}
-.choose-title{
-  font-size: 28px;
-  font-weight: bolder;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style:oblique;
-  color: rgb(66, 161, 199);
-}
-.choose-text{
-font-family: cursive;
-text-align:  center;
-font-size: medium;
-
-}
-.choose-us{
-border-radius: 60px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.5px);
-padding-left: 20px;
-padding-right: 20px;
-border: 1px solid rgba(255, 255, 255, 0.17);
-background:rgba(151, 136, 136, 0.323);
-}
-/* card-layout */
-.card {
-  transition:  0.6s ease-in-out;
-  box-shadow: 0 4px 6px ;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  background-color: black;
-  color: white;
-  
-}
-/* feed back */
-#fback{
-  border-radius: 60px;
-  backdrop-filter: blur(5.5px);
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.59);
-  background:rgba(151, 136, 136, 0.323);
-  color: white;
-}
-#fback:hover{
-  background-color: #0f0f0f;
-  transition: 0.6s ease-in-out;
-  color: white;
-}
-.feedback{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(200, 218, 46);
-}
-/* review */
-.review{
-  font-size: 20px;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-style: italic;
-}
-.review:hover{
-  color: rgb(112, 205, 171);
-  transition: 1.5s;
+  border: none;
+  box-shadow: 0 4px 15px rgba(230, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.review-name{
-  font-size: 20px;
-  font-weight: bold;
-  text-align: right;
-
-}
-#card-title{
-  font-size: 40px;
-  font-weight: bolder;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style:oblique;
-  color: rgb(66, 161, 199);
+.btn-v:hover {
+  background: #ffffff;
+  color: #e60000;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
-#card{
-  transition:0.6s ease-in-out;
+/* why choose us */
+#choose-title {
+  font-size: 36px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: #38b6ff;
+  letter-spacing: 1px;
 }
-#card:hover{
-  transform: translateY(-10px);
-  background-color: rgba(7, 7, 7, 0.468);
+.choose-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: #38b6ff;
+  margin-top: 15px;
+}
+.choose-text {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #dddddd;
+  line-height: 1.6;
+}
+.choose-us {
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 40px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* card-layout */
+.card {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(8px);
+}
+.card:hover {
+  transform: translateY(-8px);
+  background-color: #121212;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* feed back */
+#fback {
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
   color: white;
+  transition: all 0.3s ease;
 }
+#fback:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.feedback {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: #ffd166;
+}
+.review {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+.review:hover {
+  color: #38b6ff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.review-name {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  color: #ff3333;
+}
+#card-title {
+  font-size: 36px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: #38b6ff;
+  letter-spacing: 1px;
+}
+
+#card {
+  transition: 0.3s ease-in-out;
+}
+
 #brands {
   display: block;          
   width: 100%;
-  background-color: #000;
-  padding: 80px 0;         
+  background-color: #080808;
+  padding: 50px 0;         
   margin: 0;               
   position: relative;      
   clear: both;             
@@ -300,23 +339,49 @@ background:rgba(151, 136, 136, 0.323);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10rem;              
+  gap: 2.5rem;              
   max-width: 1200px;       
-  margin: 0 auto;         
+  margin: 0 auto;
+  padding: 0 20px;         
 }
 
 #brands .brand-logoo {
-  height: 100px;            
+  height: 75px;            
   width: auto;             
   object-fit: contain;    
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 #brands .brand-logoo:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
 }
-html {
-  scroll-behavior: smooth;
+
+@media (max-width: 992px) {
+  #brands .brandd-container {
+    gap: 2rem;
+  }
+  #brands .brand-logoo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  #chat-button {
+    bottom: 15px;
+    right: 15px;
+  }
+  #btn-chat {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+  #brands .brandd-container {
+    gap: 1.5rem;
+  }
+  #choose-title, #card-title {
+    font-size: 28px;
+  }
 }

@@ -1,80 +1,114 @@
-
 /* aboutus */
-#about-head{
-color: rgb(255, 251, 251);
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 40px;
-text-align: center;
-font-weight: bolder;
-text-transform: uppercase;
+#about-head, #event h2 {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  scroll-margin-top: 95px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-#about-head:hover{
-    color: rgb(20, 110, 146);
-    transition: 1.5s;
-    cursor: pointer;
+#about-head:hover, #event h2:hover {
+  color: #ff3333;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
-.about-text{
-    font-family: cursive;
-    text-align: justify;
-    font-size: large;
-    color: white;
+
+.about-text {
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .row {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-/* Events */
-.card-title{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
+
+/* Events Section */
+.card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.card-title:hover{
-    color: rgb(20, 110, 146);
-    transition: 1.5s;
-    cursor: pointer;
+.card-title:hover {
+  color: #ff3333;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
-.card-text{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-size: larger;
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.6;
 }
-/* mission styling */
+
+/* Mission Styling */
 .mission-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    text-align: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 15px;
+  text-align: center;
+}
 
-  .mission-container :hover {
-    transition: 0.6s ease;
-    transform: scale(1.1);
-  }
+.mission-box {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;   
+  padding: 30px;
+  border-radius: 16px;
+  color: #ffffff;
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .mission-box {
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;   
-    padding: 30px;
-    border-radius: 10px;
-    color: #ffffff;
-  }
+.mission-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(230, 0, 0, 0.2);
+  border-color: rgba(230, 0, 0, 0.4);
+}
 
-  .mission-title {
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+.mission-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: 'Outfit', sans-serif;
+  color: #ffffff;
+}
 
-  .mission-text {
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
+.mission-text {
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #cccccc;
+  line-height: 1.6;
+}
 
+@media (max-width: 768px) {
+  #about-head {
+    font-size: 1.8rem;
+  }
+  .about-text {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+}

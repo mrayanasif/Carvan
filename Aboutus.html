@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carvan | About-Us</title>
-  <link rel="icon" href="/img/2-removebg-preview.png">
+  <link rel="icon" href="img/2-removebg-preview.png">
   <!-- <Bootstrap 5 CSS> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,6 +12,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Other CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="aboutus.css">
@@ -20,11 +24,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
-<body background="/img/web bg.jpg" style="background-repeat: no-repeat; background-size: cover;">
+<body background="img/web bg.jpg" style="background-repeat: no-repeat; background-size: cover;">
   <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<About Us>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="/img/2-removebg-preview.png" id="logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="img/2-removebg-preview.png" id="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,13 +57,12 @@
           <li class="nav-item" id="navbar">
             <a class="nav-link" href="Pre-Owned.html" id="text">Pre-Owned Cars</a>
           </li>
-          </li>
           <li class="nav-item dropdown" id="navbar">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="text">
               Discover
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" id="text">
-              <li><a class="dropdown-item" href="Aboutus.html#events" id="navbar">Events</a></li>
+              <li><a class="dropdown-item" href="Aboutus.html#event" id="navbar">Events</a></li>
               <li><a class="dropdown-item" href="Aboutus.html" id="navbar">About Us</a></li>
               <li><a class="dropdown-item" href="gallery.html" id="navbar">Showroom</a></li>
               <li><a class="dropdown-item" href="index.html#why-choose-us" id="navbar">Why Choose Us</a></li>
@@ -83,7 +86,7 @@
   <div class="container-fluid mt-5">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="./img/about us 01.jpg" alt="" class="img-fluid rounded" style="height: 350px; width: 100%;">
+        <img src="img/about us 01.jpg" alt="" class="img-fluid rounded" style="height: 350px; width: 100%;">
       </div>
       <div class="col-md-6">
         <h1 class="mb-4" id="about-head">About Us</h1>
@@ -107,7 +110,7 @@
           car industry. For further assistance our team is 24/7 available to assist you. Choose Carvan - Your Trusted Partner</p>
       </div>
       <div class="col-md-6">
-        <img src="/img/about-us02.jpg" alt="" class="img-fluid rounded" style="height: 400px; width: 100%;">
+        <img src="img/about-us02.jpg" alt="" class="img-fluid rounded" style="height: 400px; width: 100%;">
       </div>
     </div>
   </div>
@@ -143,34 +146,40 @@
   <br><br><br>
   <!-- Past Events -->
   <h2 class="mb-4" id="about-head">Past Events</h2>
-  <div class="card-group" style="padding: 20px; gap: 20px;">
-    <div class="card">
-      <img src="/img/past.jpg" class="card-img-top" style="height: 330px;">
-      <div class="card-body">
-        <h5 class="card-title">Car Care Workshop</h5>
-        <p class="card-text text-center">This workshop session helped many car owners to learn essential maintenance tips, DIY
-          repairs, and best practices to keep their cars in top condition. This event will not only educate attendees
-          but also build trust in Carvans expertise and services.</p>
+  <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/past.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Car Care Workshop</h5>
+          <p class="card-text text-center">This workshop session helped many car owners to learn essential maintenance tips, DIY
+            repairs, and best practices to keep their cars in top condition. This event will not only educate attendees
+            but also build trust in Carvans expertise and services.</p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="/img/launch.jpg" class="card-img-top" style="height: 330px;">
-      <div class="card-body">
-        <h5 class="card-title">Showroom Opening</h5>
-        <p class="card-text text-center ">Carvans journey began with an exciting grand opening featuring special launch
-          discounts,free car checkups this event was attended by many influencers and car experts making it memorable
-          and a great success in car industries</p>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/launch.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Showroom Opening</h5>
+          <p class="card-text text-center">Carvans journey began with an exciting grand opening featuring special launch
+            discounts,free car checkups this event was attended by many influencers and car experts making it memorable
+            and a great success in car industries</p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="/img/past event 3.jpg" class="card-img-top" style="height: 330px;">
-      <div class="card-body">
-        <h5 class="card-title">Go-Green </h5>
-        <p class="card-text text-center">Carvan participated actively in campaign by planting trees The company distributed small
-          plants as part of their initiative to encourage environmental sustainability.In keeping with the company's
-          commitment to a greener future. The Vice President of Carvan planted trees with students during the
-          ceremony.This event emphasized the value of planting trees as well as the wider advantages of adopting
-          eco-friendly behaviors.</p>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/past event 3.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Go-Green </h5>
+          <p class="card-text text-center">Carvan participated actively in campaign by planting trees The company distributed small
+            plants as part of their initiative to encourage environmental sustainability.In keeping with the company's
+            commitment to a greener future. The Vice President of Carvan planted trees with students during the
+            ceremony.This event emphasized the value of planting trees as well as the wider advantages of adopting
+            eco-friendly behaviors.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -178,35 +187,41 @@
   <!-- Upcoming Events -->
    <section id="event">
   <h2 class="mb-4" id="about-head">Upcoming Events</h2>
-  <div class="card-group" style="padding: 20px; gap: 20px;">
-    <div class="card">
-      <img src="/img/upcoming 02.jpg" class="card-img-top" style="height: 330px;">
-      <div class="card-body">
-        <h5 class="card-title">Social Media Contest & Giveaway</h5>
-        <p class="card-text text-center">To boost digital engagement, Carvan launched a contest where customers will be sharing
-          their    
-          car-buying experience by recording a short clip and post it on social media but dont forget to tag
-          Carvan. To win exciting prizes, including free service, fuel vouchers also the winner will get a chance to
-          avail zero down payment financing and much more STAY TUNED.</p>
+  <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/upcoming 02.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Social Media Contest & Giveaway</h5>
+          <p class="card-text text-center">To boost digital engagement, Carvan launched a contest where customers will be sharing
+            their    
+            car-buying experience by recording a short clip and post it on social media but dont forget to tag
+            Carvan. To win exciting prizes, including free service, fuel vouchers also the winner will get a chance to
+            avail zero down payment financing and much more STAY TUNED.</p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="/img/upcoming 01.jpg" class="card-img-top" style="height: 330px;">
-      <div class="card-body">
-        <h5 class="card-title">Carvan's 25th Anniversary </h5>
-        <p class="card-text text-center">Thank you for trusting carvan we are thrilled to announce that our 25th anniversary would
-          be mind blowing for car enthusiasts we would be having Drift shows, Face paintings, Dinner for our loyal
-          customers, Lucky draws, Seminars and exclusive discounts on EMI plans. </p>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/upcoming 01.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Carvan's 25th Anniversary </h5>
+          <p class="card-text text-center">Thank you for trusting carvan we are thrilled to announce that our 25th anniversary would
+            be mind blowing for car enthusiasts we would be having Drift shows, Face paintings, Dinner for our loyal
+            customers, Lucky draws, Seminars and exclusive discounts on EMI plans. </p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="/img/upcoming 03.avif" class="card-img-top" style="height: 330px;">
-      <div class="card-body">
-        <h5 class="card-title">Test Drive & Trade In Experience</h5>
-        <p class="card-text text-center">Car enthusiasts will get a chance to drive multiple second-hand cars in a controlled
-          environment. So that customers can compare different models, can choose better option. Also the customers can
-          trade in their old vehicles for upgrade at exclusive exchange values, and enjoy special discounts on bookings
-          made during the event </p>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/upcoming 03.avif" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Test Drive & Trade In Experience</h5>
+          <p class="card-text text-center">Car enthusiasts will get a chance to drive multiple second-hand cars in a controlled
+            environment. So that customers can compare different models, can choose better option. Also the customers can
+            trade in their old vehicles for upgrade at exclusive exchange values, and enjoy special discounts on bookings
+            made during the event </p>
+        </div>
       </div>
     </div>
   </div>
@@ -252,7 +267,7 @@
         <!-- Grid column -->
         <div class="col-md-4 mb-4">
           <!-- Content -->
-          <img src="/img/2-removebg-preview.png" class="mb-3" style="max-width: 150px;">
+          <img src="img/2-removebg-preview.png" class="mb-3" style="max-width: 150px;">
           <p class="mb-2 fs-12" style="color:rgb(194, 184, 184)">Carvan is customers first approach, since 25 years providing expert guidance, transparent pricing, and seamless trade-in options to make your car-buying experience smooth and hassle-free.</p>
         </div>
         <!-- Grid column -->
@@ -260,11 +275,11 @@
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4" style="color: red;">Quick Links </h6>
           <p>
-            <a href="project.html" class="text-decoration-none text-uppercase"
+            <a href="index.html" class="text-decoration-none text-uppercase"
               style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Home</a>
           </p>
           <p>
-            <a href="project.html#brand-section" class="text-decoration-none text-uppercase"
+            <a href="index.html#brands" class="text-decoration-none text-uppercase"
               style="color: rgb(194, 184, 184); font-weight: bolder; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">Brands</a>
           </p>
           <p>
@@ -305,8 +320,6 @@
     </div>
   </section>
   <!-- Section: Links  -->
-
-  </div>
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">

@@ -1,171 +1,135 @@
 /* Gallery-Page-CSS */
-/* navbar */
-.navbar-nav {
-  margin-left: auto;
-  font-weight: bolder;
- align-items: center;
-  display: flex;
-  justify-content: flex-end;
+
+/* Cars Picture Gallery Header */
+.div {
+  background: rgba(15, 15, 15, 0.9);
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 1px;
+  padding: 15px;
+  border-radius: 8px;
+  scroll-margin-top: 95px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.div:hover {
+  cursor: pointer;
+  color: #ff3333;
+  transition: color 0.3s ease;
 }
 
-/* Hover Effect for Toggler Button */
-.navbar-toggler:hover {
-  transform: scale(1.1);  
-  transition: 0.6s ease; 
+/* Card image header */
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
-#navbar :hover {
-  color: rgb(255, 8, 8);
+
+/* Features list */
+.list {
+  list-style: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding-left: 0;
+  text-align: center;
+  color: #cccccc;
 }
-#navbar {
-  position:relative;
-  display: flex; 
+
+.checked {
+  color: #ffc107;
 }
-#navbar :after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 6px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(111, 2, 2);
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-in;
-}
-#navbar :hover::after {
-  transform: scale(1);
-  transform-origin: bottom left; 
-}
-#text{
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
-}
-#logo{
-  height: 70px;
-  width: 100;
-}
-/* Cars Picture Gallery */
-.card-img-top{
-    height: 350px;
-}
-/* features of car */
-.list{
-    list-style: none;
-    font-size: large;
-    font-weight: lighter;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    font-size: medium;
-}
-.checked{
-  color: rgb(245, 168, 52);
-}
-/* book  now */
-.btn{
- padding: 10px 20px;  
+
+/* Buttons */
+.btn {
+  padding: 10px 24px;  
   white-space: nowrap;  
+  border-radius: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
-.btn:hover{
-  background-color: #074428;
+.btn:hover {
+  background-color: #e60000;
   color: white;
-  transition: 0.6s;
+  border-color: #e60000;
 }
-/* section */
-.div{
-    background-color: black;
-    font-weight: bolder;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-}
-.div:hover{
-    cursor: pointer;
-    color: #c00b0b;
-    transition: 1.5s;
 
+.car-name {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: #ffffff;
+  margin-bottom: 8px;
 }
-.car-name{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-    
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .car-name:hover{
-    color: #2884a8;
-    cursor: pointer;
-    transition: 0.6s ease-in-out;
-    transform: scale(1.1);
-  }
-  /* features heading */
-  .features{
-      text-align:center;
-      font-size: medium;
-      font-weight: bold; 
-  }
+.car-name:hover {
+  color: #ff3333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
-/* /brands */
-#brand-section{
-background-color: #0f0f0f;
-padding: 2px;
-width: 100%;
-justify-content: space-evenly;
+/* Features heading */
+.features {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600; 
+  color: #e0e0e0;
 }
-#featured-brand{
-height: 100px;
-object-fit: contain;
+
+/* Brands section */
+#brand-section {
+  background-color: rgba(15, 15, 15, 0.95);
+  padding: 20px;
+  width: 100%;
+}
+#featured-brand {
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+#featured-brand:hover {
+  transform: scale(1.08);
 }
 #menu {
-display:flex;
-gap: 1rem;
-list-style: none;
-flex-wrap: wrap;
-justify-content:space-evenly;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
-/* /chat button/ */
-#chat-button {
-  position: fixed;
-  bottom: 10px;
-  right: 50px;
-}
-#btn-chat {
-  background-color: #000000;
-  color: white;
-  border-radius: 50px;
-  padding: 15px 2ch;
-  font-size: 16px;
-  cursor: pointer;
-  transition:0.3s;
-}
-#btn-chat:hover {
-  background-color: #c00b0b;
-  color: #ffffff;
-  transform:scale(1.1);
-  transition: 0.6s;
-}
-/* card-layout */
+
+/* Card layout enhancements */
 .card {
-  transition:0.6s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   width: 100%;
-  max-width: 350px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  max-width: 380px; 
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  background-color: #000000;
-  color: white;
+  transform: translateY(-8px);
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(230, 0, 0, 0.4);
+  box-shadow: 0 12px 30px rgba(230, 0, 0, 0.2);
 }
+
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-padding-top: 95px;
 }
 
 /* Container fixes */
@@ -173,22 +137,25 @@ html, body {
   width: 100%;
   max-width: 1400px;
   margin: auto;
-  padding: 20px;
-}
-.row {
-  margin: 0;
-  justify-content: center;
-}
-.col {
-  display: flex;
-  justify-content: center;
+  padding: 20px 15px;
 }
 
-/* Ensure equal padding on both sides */
 #car-layout-card {
   padding-left: 10px;
   padding-right: 10px;
 }
-.card-footer{
+.card-footer {
   text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .div {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .card-img-top {
+    height: 200px;
+  }
 }
